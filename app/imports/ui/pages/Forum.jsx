@@ -8,6 +8,13 @@ import { Posts } from '../../api/post/post';
 import { Comments } from '../../api/comment/comment';
 import Post from '../components/Post';
 
+const dateMinusThirty = () => {
+  const currentDate = new Date();
+  const currentMonth = currentDate.getMonth();
+  currentDate.setMonth(currentMonth - 1);
+  return currentDate;
+};
+
 const Forum = () => {
   const postsPerPage = 10;
   const [activePage, setActivePage] = useState(1);
@@ -18,7 +25,7 @@ const Forum = () => {
     const postSubscription = Meteor.subscribe(Posts.userPublicationName);
     const commentSubscription = Meteor.subscribe(Comments.userPublicationName);
     const rdy = postSubscription.ready() && commentSubscription.ready();
-    const postItems = Posts.collection.find({}).fetch();
+    const postItems = Posts.collection.find({ createdAt: { $gt: dateMinusThirty() } }).fetch();
     const commentItems = Comments.collection.find({}).fetch();
     return {
       posts: postItems,
