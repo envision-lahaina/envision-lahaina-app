@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Profiles } from '../../api/profile/profile';
-import { Posts } from '../../api/post/post';
+import { WorkoutLogs } from '../../api/workoutlog/workoutlog';
 import { Comments } from '../../api/comment/comment';
 import { Surveys } from '../../api/survey/survey';
 import { Votes } from '../../api/vote/vote';
@@ -19,9 +19,9 @@ Meteor.publish(Profiles.userPublicationName, function () {
   return this.ready();
 });
 
-Meteor.publish(Posts.userPublicationName, function () {
+Meteor.publish(WorkoutLogs.userPublicationName, function () {
   if (this.userId) {
-    return Posts.collection.find();
+    return WorkoutLogs.collection.find();
   }
   return this.ready();
 });

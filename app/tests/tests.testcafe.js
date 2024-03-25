@@ -3,7 +3,7 @@ import { signinPage } from './signin.page';
 import { signoutPage } from './signout.page';
 import { navBar } from './navbar.component';
 import { communityPage } from './community.page';
-import { forumPage } from './forum.page';
+import { workoutlogPage } from './workoutlog.page';
 import { surveyPage } from './survey.page';
 import { mappingPage } from './mapping.page';
 import { dalle3Page } from './dalle3.page';
@@ -68,20 +68,20 @@ test('Test that Community page works', async (testController) => {
   await communityPage.hasCards(testController);
 });
 
-test('Test that Forum page and adding post/comment works', async (testController) => {
+test('Test that Workout Log page and adding post/comment works', async (testController) => {
   await navBar.gotoSignInPage(testController);
   await signinPage.signin(testController, credentials.username, credentials.password);
   await navBar.isLoggedIn(testController, credentials.username);
-  await navBar.gotoForumPage(testController);
-  await forumPage.isDisplayed(testController);
-  await forumPage.gotoAddPost(testController);
-  await navBar.gotoForumPage(testController);
-  await forumPage.isDisplayed(testController);
-  await forumPage.addComment(testController);
-  await navBar.gotoForumPage(testController);
-  await forumPage.isDisplayed(testController);
-  await forumPage.deleteComment(testController);
-  await forumPage.deletePost(testController);
+  await navBar.gotoWorkoutLogPage(testController);
+  await workoutlogPage.isDisplayed(testController);
+  await workoutlogPage.gotoAddPost(testController);
+  await navBar.gotoWorkoutLogPage(testController);
+  await workoutlogPage.isDisplayed(testController);
+  await workoutlogPage.addComment(testController);
+  await navBar.gotoWorkoutLogPage(testController);
+  await workoutlogPage.isDisplayed(testController);
+  await workoutlogPage.deleteComment(testController);
+  await workoutlogPage.deletePost(testController);
 });
 
 test('Test that Survey page works', async (testController) => {

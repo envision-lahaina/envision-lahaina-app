@@ -65,72 +65,116 @@
       "createdAt": "2023-10-03T00:00:00Z",
       "owner": "admin@foo.com" }
   ],
-  "defaultPosts": [
-    { "title": "post #1",
-      "contents": "Testing",
+  "defaultLogs": [
+    { 
+      "date": "2023-11-04T00:00:00Z",
+      "title": "log #1",
+      "description": "Testing",
       "image": "https://www.etestware.com/wp-content/uploads/2020/12/shutterstock_515285995-1200x580.jpg",
       "createdAt": "2023-11-04T00:00:00Z",
-      "owner": "admin@foo.com"
+      "owner": "admin@foo.com",
+      "activityDurationHours": 1,
+      "activityDurationMinutes": 0
     },
-    { "title": "post #2",
-      "contents": "Testing",
+    { 
+      "date": "2023-11-05T00:00:00Z",
+      "title": "log #2",
+      "description": "Testing",
       "image": "https://www.etestware.com/wp-content/uploads/2020/12/shutterstock_515285995-1200x580.jpg",
       "createdAt": "2023-11-04T00:00:00Z",
-      "owner": "admin@foo.com"
+      "owner": "admin@foo.com",
+      "activityDurationHours": 1,
+      "activityDurationMinutes": 30
     },
-    { "title": "post #3",
-      "contents": "Testing",
+    { 
+      "date": "2023-11-06T00:00:00Z",
+      "title": "log #3",
+      "description": "Testing",
       "image": "https://www.etestware.com/wp-content/uploads/2020/12/shutterstock_515285995-1200x580.jpg",
       "createdAt": "2023-11-04T00:00:00Z",
-      "owner": "admin@foo.com"
+      "owner": "admin@foo.com",
+      "activityDurationHours": 1,
+      "activityDurationMinutes": 0
     },
-    { "title": "mix it up at 4",
-      "contents": "Testing",
+    { 
+      "date": "2023-11-07T00:00:00Z",
+      "title": "mix it up at 4",
+      "description": "Testing",
       "image": "https://www.etestware.com/wp-content/uploads/2020/12/shutterstock_515285995-1200x580.jpg",
       "createdAt": "2023-11-04T00:00:00Z",
-      "owner": "admin@foo.com"
+      "owner": "admin@foo.com",
+      "activityDurationHours": 0,
+      "activityDurationMinutes": 30
     },
-    { "title": "post #5",
-      "contents": "Testing",
+    { 
+      "date": "2023-11-08T00:00:00Z",
+      "title": "log #5",
+      "description": "Testing",
       "image": "https://www.etestware.com/wp-content/uploads/2020/12/shutterstock_515285995-1200x580.jpg",
       "createdAt": "2023-11-04T00:00:00Z",
-      "owner": "admin@foo.com"
+      "owner": "admin@foo.com",
+      "activityDurationHours": 1,
+      "activityDurationMinutes": 0
     },
-    { "title": "mix it up at 6",
-      "contents": "Testing",
+    { 
+      "date": "2023-11-10T00:00:00Z",
+      "title": "mix it up at 6",
+      "description": "Testing",
       "image": "https://www.etestware.com/wp-content/uploads/2020/12/shutterstock_515285995-1200x580.jpg",
       "createdAt": "2023-11-04T00:00:00Z",
-      "owner": "admin@foo.com"
+      "owner": "admin@foo.com",
+      "activityDurationHours": 0,
+      "activityDurationMinutes": 40
     },
-    { "title": "post #7",
-      "contents": "Testing",
+    { 
+      "date": "2023-11-12T00:00:00Z",
+      "title": "log #7",
+      "description": "Testing",
       "image": "https://www.etestware.com/wp-content/uploads/2020/12/shutterstock_515285995-1200x580.jpg",
       "createdAt": "2023-11-04T00:00:00Z",
-      "owner": "admin@foo.com"
+      "owner": "admin@foo.com",
+      "activityDurationHours": 0,
+      "activityDurationMinutes": 25
     },
-    { "title": "post #8",
-      "contents": "Testing",
+    { 
+      "date": "2023-11-13T00:00:00Z",
+      "title": "log #8",
+      "description": "Testing",
       "image": "https://www.etestware.com/wp-content/uploads/2020/12/shutterstock_515285995-1200x580.jpg",
       "createdAt": "2023-11-04T00:00:00Z",
-      "owner": "admin@foo.com"
+      "owner": "admin@foo.com",
+      "activityDurationHours": 1,
+      "activityDurationMinutes": 0
     },
-    { "title": "mix it up at 9",
-      "contents": "Testing",
+    { 
+      "date": "2023-11-14T00:00:00Z",
+      "title": "mix it up at 9",
+      "description": "Testing",
       "image": "https://www.etestware.com/wp-content/uploads/2020/12/shutterstock_515285995-1200x580.jpg",
       "createdAt": "2023-11-04T00:00:00Z",
-      "owner": "admin@foo.com"
+      "owner": "admin@foo.com",
+      "activityDurationHours": 1,
+      "activityDurationMinutes": 20
     },
-    { "title": "post #10",
-      "contents": "Testing",
+    { 
+      "date": "2023-11-20T00:00:00Z",
+      "title": "log #10",
+      "description": "Testing",
       "image": "https://www.etestware.com/wp-content/uploads/2020/12/shutterstock_515285995-1200x580.jpg",
       "createdAt": "2023-11-04T00:00:00Z",
-      "owner": "admin@foo.com"
+      "owner": "admin@foo.com",
+      "activityDurationHours": 2,
+      "activityDurationMinutes": 0
     },
-    { "title": "post #11",
-      "contents": "Testing",
+    { 
+      "date": "2023-11-21T00:00:00Z",
+      "title": "log #11",
+      "description": "Testing",
       "image": "https://www.etestware.com/wp-content/uploads/2020/12/shutterstock_515285995-1200x580.jpg",
       "createdAt": "2023-11-04T00:00:00Z",
-      "owner": "admin@foo.com"
+      "owner": "admin@foo.com",
+      "activityDurationHours": 1,
+      "activityDurationMinutes": 30
     }
   ],
   "defaultProfiles": [

@@ -1,9 +1,9 @@
 import { Selector } from 'testcafe';
 import { ComponentIDs, PageIDs } from '../imports/ui/utilities/ids';
 
-class ForumPage {
+class WorkoutLogPage {
   constructor() {
-    this.pageId = `#${PageIDs.forum}`;
+    this.pageId = `#${PageIDs.workoutlog}`;
     this.pageSelector = Selector(this.pageId);
   }
 
@@ -44,4 +44,4 @@ class ForumPage {
   }
 }
 
-export const forumPage = new ForumPage();
+export const workoutlogPage = new WorkoutLogPage();

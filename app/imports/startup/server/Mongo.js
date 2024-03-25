@@ -1,7 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Profiles } from '../../api/profile/profile';
-import { Posts } from '../../api/post/post';
-import { Comments } from '../../api/comment/comment';
+import { WorkoutLogs } from '../../api/workoutlog/workoutlog';
 import { Surveys } from '../../api/survey/survey';
 import { Votes } from '../../api/vote/vote';
 import { ModCards } from '../../api/modcard/modcard';
@@ -18,15 +17,15 @@ if (Profiles.collection.find().count() === 0) {
   }
 }
 
-const addPost = (post) => {
-  console.log(`  Adding: ${post.title} (${post.owner})`);
-  Posts.collection.insert(post);
+const createLog = (log) => {
+  console.log(`  Creating: ${log.title} (${log.owner})`);
+  WorkoutLogs.collection.insert(log);
 };
 
-if (Posts.collection.find().count() === 0) {
-  if (Meteor.settings.defaultPosts) {
-    console.log('Creating default posts.');
-    Meteor.settings.defaultPosts.forEach(data => addPost(data));
+if (WorkoutLogs.collection.find().count() === 0) {
+  if (Meteor.settings.defaultLogs) {
+    console.log('Creating default logs.');
+    Meteor.settings.defaultLogs.forEach(data => createLog(data));
   }
 }
 
@@ -54,17 +53,17 @@ if (Votes.collection.find().count() === 0) {
   }
 }
 
-const addComment = (comment) => {
-  console.log(`  Adding: ${comment.owner}`);
-  Comments.collection.insert(comment);
-};
+// const addComment = (comment) => {
+//   console.log(`  Adding: ${comment.owner}`);
+//   Comments.collection.insert(comment);
+// };
 
-if (Comments.collection.find().count() === 0) {
-  if (Meteor.settings.defaultComments) {
-    console.log('Creating default comments.');
-    Meteor.settings.defaultComments.forEach(data => addComment(data));
-  }
-}
+// if (Comments.collection.find().count() === 0) {
+//   if (Meteor.settings.defaultComments) {
+//     console.log('Creating default comments.');
+//     Meteor.settings.defaultComments.forEach(data => addComment(data));
+//   }
+// }
 
 const addModCard = (modcard) => {
   console.log(`  Adding: ${modcard.address}`);

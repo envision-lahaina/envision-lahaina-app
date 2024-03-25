@@ -16,11 +16,11 @@ The Home Page is the first page that users will see when they Login, no other fe
 
 ## Civic Engagement
 
-#### Forum
+#### Workout Log
 
-Forum consists of posting, commenting, searching base on titles, and viewing your own post by click on my posts. 
+Workout Log consists of posting, commenting, searching base on titles, and viewing your own post by click on my posts. 
 
-![](doc/Forum-Page.png)
+
 
 #### Survey
 

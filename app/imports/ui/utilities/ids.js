@@ -1,18 +1,19 @@
 export const ComponentIDs = {
-  // Forum Page components
-  addPost: 'addPost',
-  // AddPost Page components:
-  addPostTitle: 'addPostTitle',
-  addPostContent: 'addPostContent',
-  addPostSubmit: 'addPostSubmit',
+  // Workoutlog Page components
+  createLog: 'createLog',
+  editLog: 'editLog',
+  // CreateLog Page components:
+  createLogTitle: 'createLogTitle',
+  createLogDescription: 'createLogDescription',
+  createLogSubmit: 'createLogSubmit',
   // Comment on Post IDs
   addComment: 'addComment',
   addCommentText: 'addCommentText',
   submitComment: 'submitComment',
-  post: 'post',
+  log: 'log',
   comment: 'comment',
   deleteComment: 'deleteComment',
-  deletePost: 'deletePost',
+  deleteLog: 'deleteLog',
   //
   fileField: 'fileField',
   //
@@ -44,7 +45,7 @@ export const ComponentIDs = {
   submitEdit: 'submitEdit',
   // Civic Engagement Dop-down Items
   navBarCivicEngagementItem: 'navBarCivicEngagementItem',
-  navBarToForum: 'navBarToForum',
+  navBarToWorkoutLog: 'navBarToWorkoutLog',
   navBarToSurvey: 'navBarToSurvey',
   navBarToCommunity: 'navBarToCommunity',
   // Visualize Toolset Navbar Items
@@ -87,14 +88,15 @@ export const ComponentIDs = {
 
 export const PageIDs = {
   addModCard: 'addModCard',
-  addPost: 'addPost',
+  createLog: 'createLog',
+  editLog: 'editLog',
   addProfile: 'addProfile',
   addSurvey: 'addSurvey',
   communityPage: 'communityPage',
   dalle3: 'dalle3',
   editProfile: 'editProfile',
   external: 'external',
-  forum: 'forum',
+  workoutlog: 'workoutlog',
   landing: 'landing',
   mapping: 'mapping',
   model: 'model',

@@ -44,12 +44,12 @@ class NavBar {
     await testController.click(`#${ComponentIDs.navBarSignUp}`);
   }
 
-  async gotoForumPage(testController) {
+  async gotoWorkoutLogPage(testController) {
     await testController.click(`#${ComponentIDs.navBarCivicEngagementItem}`);
-    await testController.click(`#${ComponentIDs.navBarToForum}`);
+    await testController.click(`#${ComponentIDs.navBarToWorkoutLog}`);
   }
 
-  /** Test that CE Forum page works */
+  /** Test that CE Workout Log page works */
   async gotoSurveyPage(testController) {
     await testController.click(`#${ComponentIDs.navBarCivicEngagementItem}`);
     await testController.click(`#${ComponentIDs.navBarToSurvey}`);
